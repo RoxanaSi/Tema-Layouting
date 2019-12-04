@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Layouting</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+        h1, #parent{
+            font-family: 'Muli', sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: orange ;
+        }
+        h3, p {
+            text-align: center;
+            color: black;
+        }
+       
+        #flex-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            top: 700px;
+            }
+        .checked {
+            color: orange;
+            text-align: center;
+            }
+        #buttonbuy {
+            background-color: #555555;
+            border: none;
+            font-size: 16px;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            }
+        #buttonseen {
+            background-color:#e7e7e7; 
+            color: black;
+            border: none;
+            font-size: 16px;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            }
+        
+        
+    </style>
+</head>
+
+<body>
+    <h1>Listing directors & their films</h1>
+   <div id="parent">
+    <section id="flex-container">
+             <article>
+                <img src="Woody Allen.jpg" alt="Woody Allen" width="300" height="400">
+                <div>
+                    <h3>Woody Allen</h3>
+                        <p>
+                            <span class="fa fa-star checked"> 5.0 </span>
+                            <i class="far fa-heart">29</i>
+                        </p>
+                        <p>Film: A rainy day in New York</p>
+                        <h3>
+                            <button id="buttonbuy" type="button">BUY</button>
+                            <button id="buttonseen" type="button">SEEN</button>
+                        </h3>
+                </div>
+            </article>
+            <article> 
+                <img src="Agnes Jaoui.jpg" alt="Agnès Jaoui" width="300" height="400">
+                <h3>Agnes Jaoui</h3>
+                <p>
+                        <span class="fa fa-star checked"> 5.0 </span>
+                        <i class="fas fa-heart">29</i>
+                    </p>
+                <p>Film: Au bout du conte</p>
+                <h3>
+                        <button id="buttonbuy" type="button">BUY</button>
+                        <button id="buttonseen" type="button">SEEN</button>
+                    </h3>
+            </article>
+            <article>
+                <img src="Francois Ozon.jpg" alt="Francois Ozon" width="300" height="400">
+                <h3>Francois Ozon</h3>
+                <p>
+                        <span class="fa fa-star checked"> 5.0 </span>
+                        <i class="far fa-heart">29</i>
+                    </p>
+                <p>Film: Potiche</p>
+                <h3>
+                        <button id="buttonbuy" type="button">BUY</button>
+                        <button id="buttonseen" type="button">SEEN</button>
+                    </h3>
+            </article>
+        </ul>
+    </section>
+</div>
+</div>
+</body>
+</html>
